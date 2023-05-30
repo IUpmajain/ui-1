@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    grid-template-rows: 2fr;
+    border-radius: 50px;
+    text-align: center;
+    background-color:white;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.box1 .logo{
+    width: 30px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: coral;
+}
+.box1 ul{
+    list-style: none;
+    color: gray;
+}
+.name img{
+    width: 220px;
+}
+
+.box1 h6{
+    color: gray;
+}
+.box2{
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+.box2 span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.last{
+    width: 95%;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(243, 109, 61);
+}
+ .last1{
+    width: 150px;
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.last1 h5{
+    font-size: 15px;
+}
+.last1 p{
+    font-size: 12px;
+    margin-left: 30px
+}
+.last2{
+    width: 550px;
+    margin-right: -10px;
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    margin-top: 40px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(99, 98, 98);
+}
+.card2{
+    width: 30px;
+    height: 30px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border: none;
+    border-radius: 10px;
+    background-color: orangered;
+}
+.card2 i{
+    margin-left: 2px;
+    color: white;
+}
+
+
+@media(max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100%;
+    }
+    .box1{
+        width: 40%;
+    }
+    .box2{
+        width: 60%;
+    }
+    .box2 span{
+        width: 100%;
+        display: flex;
+         flex-wrap: wrap;
+         margin-left: -90px;
+    }
+    .logo{
+        margin-top: -90px;
+    }
+    .image{
+        width: 350px;
+        height: 350px;
+    }
+    .last{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -60px;
+    }
+    .last2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
